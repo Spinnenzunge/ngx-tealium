@@ -1,6 +1,6 @@
 {
   "name": "ngx-tealium",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -14,7 +14,8 @@
     "test:lib": "ng test ngx-tealium --no-watch --no-progress --browsers=ChromeHeadlessCI",
     "test:ci": "npm run test:lib && npm run test:app",
     "prepare": "husky install",
-    "postbuild:lib": "copyfiles README.md dist/ngx-tealium"
+    "postbuild:lib": "copyfiles README.md dist/ngx-tealium",
+    "semantic-release": "semantic-release"
   },
   "private": true,
   "dependencies": {
@@ -46,6 +47,11 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
     "ng-packagr": "^14.2.0",
-    "typescript": "~4.7.2"
+    "typescript": "~4.7.2",
+    "semantic-release": "^19.0.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Spinnenzunge/ngx-tealium.git"
   }
 }
