@@ -33,6 +33,100 @@
           }
         }
       }
+    },
+    "ngx-tealium-showcase": {
+      "projectType": "application",
+      "schematics": {},
+      "root": "projects/ngx-tealium-showcase",
+      "sourceRoot": "projects/ngx-tealium-showcase/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/ngx-tealium-showcase",
+            "index": "projects/ngx-tealium-showcase/src/index.html",
+            "main": "projects/ngx-tealium-showcase/src/main.ts",
+            "polyfills": "projects/ngx-tealium-showcase/src/polyfills.ts",
+            "tsConfig": "projects/ngx-tealium-showcase/tsconfig.app.json",
+            "assets": [
+              "projects/ngx-tealium-showcase/src/favicon.ico",
+              "projects/ngx-tealium-showcase/src/assets"
+            ],
+            "styles": [
+              "projects/ngx-tealium-showcase/src/styles.css"
+            ],
+            "scripts": []
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kb",
+                  "maximumError": "1mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "projects/ngx-tealium-showcase/src/environments/environment.ts",
+                  "with": "projects/ngx-tealium-showcase/src/environments/environment.prod.ts"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "browserTarget": "ngx-tealium-showcase:build:production"
+            },
+            "development": {
+              "browserTarget": "ngx-tealium-showcase:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "browserTarget": "ngx-tealium-showcase:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-tealium-showcase/src/test.ts",
+            "polyfills": "projects/ngx-tealium-showcase/src/polyfills.ts",
+            "tsConfig": "projects/ngx-tealium-showcase/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-tealium-showcase/karma.conf.js",
+            "assets": [
+              "projects/ngx-tealium-showcase/src/favicon.ico",
+              "projects/ngx-tealium-showcase/src/assets"
+            ],
+            "styles": [
+              "projects/ngx-tealium-showcase/src/styles.css"
+            ],
+            "scripts": []
+          }
+        }
+      }
     }
   }
 }
