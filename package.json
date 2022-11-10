@@ -17,7 +17,6 @@
     "postbuild:lib": "copyfiles README.md dist/ngx-tealium",
     "semantic-release": "semantic-release"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^14.2.0",
     "@angular/common": "^14.2.0",
@@ -40,6 +39,8 @@
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
     "@semantic-release/github": "^8.0.6",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3",
     "@types/jasmine": "~4.0.0",
     "copyfiles": "^2.4.1",
     "husky": "^8.0.2",
