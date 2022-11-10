@@ -3,5 +3,36 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+    "ngx-tealium": {
+      "projectType": "library",
+      "root": "projects/ngx-tealium",
+      "sourceRoot": "projects/ngx-tealium/src",
+      "prefix": "tea",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-tealium/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-tealium/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-tealium/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-tealium/src/test.ts",
+            "tsConfig": "projects/ngx-tealium/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-tealium/karma.conf.js"
+          }
+        }
+      }
+    }
   }
 }
