@@ -1,6 +1,6 @@
 {
   "name": "ngx-tealium",
-  "version": "0.0.0-development",
+  "version": "1.0.0-development",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -38,9 +38,6 @@
     "@commitlint/config-conventional": "^17.2.0",
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
-    "@semantic-release/github": "^8.0.6",
-    "@semantic-release/npm": "^9.0.1",
-    "@semantic-release/release-notes-generator": "^10.0.3",
     "@types/jasmine": "~4.0.0",
     "copyfiles": "^2.4.1",
     "husky": "^8.0.2",
@@ -53,9 +50,5 @@
     "ng-packagr": "^14.2.0",
     "semantic-release": "^19.0.5",
     "typescript": "~4.7.2"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Spinnenzunge/ngx-tealium.git"
   }
 }

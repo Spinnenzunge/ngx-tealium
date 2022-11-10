@@ -1,6 +1,20 @@
 {
   "name": "ngx-tealium",
-  "version": "0.0.1",
+  "version": "1.0.0-development",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Spinnenzunge/ngx-tealium.git"
+  },
+  "keywords": [
+    "angular",
+    "tealium"
+  ],
+  "author": "Pascal Graf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Spinnenzunge/ngx-tealium/issues"
+  },
+  "homepage": "https://github.com/Spinnenzunge/ngx-tealium#readme",
   "peerDependencies": {
     "@angular/common": "^14.2.0",
     "@angular/core": "^14.2.0"
