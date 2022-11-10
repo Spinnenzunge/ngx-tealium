@@ -30,7 +30,7 @@ configure the TealiumTrackingModule by defining a `configLoader` provider.
     TealiumTrackingModule.forRoot({
       configLoader: {
         provide: TealiumConfigLoader,
-        useValue: new TealiumConfigStaticLoader({account: 'mobiliar', profile: 'test', environment: 'dev'}),
+        useValue: new TealiumConfigStaticLoader({account: 'test', profile: 'test', environment: 'dev'}),
       },
     }),
   ],
