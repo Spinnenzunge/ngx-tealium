@@ -5,9 +5,16 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:app": "ng build ngx-tealium-showcase --configuration production",
+    "build:lib": "ng build ngx-tealium --configuration production",
+    "build:ci": "npm run build:lib && npm run build:app",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "prepare": "husky install"
+    "test:app": "ng test ngx-tealium-showcase --no-watch --no-progress --browsers=ChromeHeadlessCI",
+    "test:lib": "ng test ngx-tealium --no-watch --no-progress --browsers=ChromeHeadlessCI",
+    "test:ci": "npm run test:lib && npm run test:app",
+    "prepare": "husky install",
+    "postbuild:lib": "copyfiles README.md dist/ngx-tealium"
   },
   "private": true,
   "dependencies": {
@@ -30,6 +37,7 @@
     "@commitlint/cli": "^17.2.0",
     "@commitlint/config-conventional": "^17.2.0",
     "@types/jasmine": "~4.0.0",
+    "copyfiles": "^2.4.1",
     "husky": "^8.0.2",
     "jasmine-core": "~4.3.0",
     "karma": "~6.4.0",
