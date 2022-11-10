@@ -20,8 +20,6 @@ jobs:
         run: npm ci
       - name: Build 🛠
         run: npm run build:ci
-      - name: Test 📋
-        run: npm run test:ci
       - name: Publish 📢
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
