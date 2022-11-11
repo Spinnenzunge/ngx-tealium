@@ -15,7 +15,8 @@
     "test:ci": "npm run test:lib && npm run test:app",
     "prepare": "husky install",
     "postbuild:lib": "copyfiles README.md dist/ngx-tealium",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "lint": "ng lint"
   },
   "dependencies": {
     "@angular/animations": "^14.2.0",
@@ -32,6 +33,11 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.2.9",
+    "@angular-eslint/builder": "14.1.2",
+    "@angular-eslint/eslint-plugin": "14.1.2",
+    "@angular-eslint/eslint-plugin-template": "14.1.2",
+    "@angular-eslint/schematics": "14.1.2",
+    "@angular-eslint/template-parser": "14.1.2",
     "@angular/cli": "~14.2.9",
     "@angular/compiler-cli": "^14.2.0",
     "@commitlint/cli": "^17.2.0",
@@ -39,7 +45,10 @@
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
     "@types/jasmine": "~4.0.0",
+    "@typescript-eslint/eslint-plugin": "5.37.0",
+    "@typescript-eslint/parser": "5.37.0",
     "copyfiles": "^2.4.1",
+    "eslint": "^8.23.1",
     "husky": "^8.0.2",
     "jasmine-core": "~4.3.0",
     "karma": "~6.4.0",
