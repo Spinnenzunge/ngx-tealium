@@ -1,5 +1,5 @@
-import {ModuleWithProviders, NgModule, Provider} from "@angular/core";
-import {TealiumTrackingService} from "./tealium-tracking.service";
+import { ModuleWithProviders, NgModule, Provider } from '@angular/core';
+import { TealiumTrackingService } from './tealium-tracking.service';
 
 /**
  * Tealium Module Config
@@ -26,4 +26,3 @@ export class TealiumTrackingModule {
     };
   }
 }
-

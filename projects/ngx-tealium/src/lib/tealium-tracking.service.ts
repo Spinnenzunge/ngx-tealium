@@ -1,8 +1,8 @@
-import {Injectable} from '@angular/core';
-import {switchMap, take} from 'rxjs';
-import {TealiumConfig} from './tealium-config';
-import {TealiumConfigLoader} from './tealium-config.loader';
-import {TealiumEvent,} from './tealium-event';
+import { Injectable } from '@angular/core';
+import { switchMap, take } from 'rxjs';
+import { TealiumConfig } from './tealium-config';
+import { TealiumConfigLoader } from './tealium-config.loader';
+import { TealiumEvent } from './tealium-event';
 
 const TEALIUM_SCRIPT_ID = 'tealium-utag-js';
 
@@ -17,7 +17,7 @@ export class TealiumTrackingService {
 
   constructor(private tealiumConfigLoader: TealiumConfigLoader) {
     // Typically set "noview" flag (no first page automatic view event) to true for Single Page Apps (SPAs)
-    (window as any).utag_cfg_ovrd = {noview: true};
+    (window as any).utag_cfg_ovrd = { noview: true };
     (window as any).utag_data = {};
   }
 
@@ -110,4 +110,3 @@ export class TealiumTrackingService {
     });
   }
 }
-
