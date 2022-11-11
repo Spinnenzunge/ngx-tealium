@@ -1,8 +1,8 @@
-import {TealiumTrackingService} from "./tealium-tracking.service";
-import {TealiumConfig} from "./tealium-config";
-import {fakeAsync, TestBed, tick} from "@angular/core/testing";
-import {TealiumConfigLoader, TealiumConfigStaticLoader} from "./tealium-config.loader";
-import {TealiumEvent} from "./tealium-event";
+import { TealiumTrackingService } from './tealium-tracking.service';
+import { TealiumConfig } from './tealium-config';
+import { fakeAsync, TestBed, tick } from '@angular/core/testing';
+import { TealiumConfigLoader, TealiumConfigStaticLoader } from './tealium-config.loader';
+import { TealiumEvent } from './tealium-event';
 
 describe('TealiumTrackingService', () => {
   let service: TealiumTrackingService;
@@ -51,7 +51,7 @@ describe('TealiumTrackingService', () => {
 
   describe('trackPageView()', () => {
     it('sends a TealiumEvent payload as a view tracking to tealium', () => {
-      const eventMock: TealiumEvent = {page_name: 'test'};
+      const eventMock: TealiumEvent = { page_name: 'test' };
 
       service.trackPageView(eventMock);
 
@@ -61,7 +61,7 @@ describe('TealiumTrackingService', () => {
 
   describe('trackCustomEvent()', () => {
     it('sends a generic payload as a link tracking to tealium', () => {
-      const eventMock: TealiumEvent = {random: 'true'};
+      const eventMock: TealiumEvent = { random: 'true' };
 
       service.trackCustomEvent(eventMock);
 
@@ -87,4 +87,3 @@ describe('TealiumTrackingService', () => {
     });
   });
 });
-

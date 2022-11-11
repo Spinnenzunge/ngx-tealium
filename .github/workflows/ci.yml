@@ -1,5 +1,4 @@
-# Based on https://github.com/actions/starter-workflows/blob/main/ci/node.js.yml
-name: CI
+name: Angular CI
 on:
   pull_request:
     branches:
@@ -8,16 +7,18 @@ jobs:
   ci:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout ✅
+      - name: Checkout
         uses: actions/checkout@v2
-      - name: Setup 🏗
+      - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
           node-version: lts/*
           cache: 'npm'
-      - name: Install ⚙️
+      - name: Install dependencies
         run: npm ci
-      - name: Build 🛠
+      - name: Build
         run: npm run build:ci
-      - name: Test 📋
+      - name: Lint
+        run: npm run lint
+      - name: Test
         run: npm run test:ci

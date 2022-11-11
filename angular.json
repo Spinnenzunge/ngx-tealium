@@ -2,6 +2,11 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1,
   "newProjectRoot": "projects",
+  "cli": {
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
+  },
   "projects": {
     "ngx-tealium": {
       "projectType": "library",
@@ -30,6 +35,15 @@
             "main": "projects/ngx-tealium/src/test.ts",
             "tsConfig": "projects/ngx-tealium/tsconfig.spec.json",
             "karmaConfig": "projects/ngx-tealium/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/ngx-tealium/**/*.ts",
+              "projects/ngx-tealium/**/*.html"
+            ]
           }
         }
       }
@@ -124,6 +138,15 @@
               "projects/ngx-tealium-showcase/src/styles.css"
             ],
             "scripts": []
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/ngx-tealium-showcase/**/*.ts",
+              "projects/ngx-tealium-showcase/**/*.html"
+            ]
           }
         }
       }

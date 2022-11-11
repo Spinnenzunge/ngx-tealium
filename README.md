@@ -30,14 +30,13 @@ configure the TealiumTrackingModule by defining a `configLoader` provider.
     TealiumTrackingModule.forRoot({
       configLoader: {
         provide: TealiumConfigLoader,
-        useValue: new TealiumConfigStaticLoader({account: 'test', profile: 'test', environment: 'dev'}),
+        useValue: new TealiumConfigStaticLoader({ account: 'test', profile: 'test', environment: 'dev' }),
       },
     }),
   ],
   bootstrap: [AppComponent],
 })
-export class AppModule {
-}
+export class AppModule {}
 ```
 
 #### Async Config
@@ -66,8 +65,7 @@ export function tealiumConfigLoaderFactory(httpClient: HttpClient): TealiumConfi
   ],
   bootstrap: [AppComponent],
 })
-export class AppModule {
-}
+export class AppModule {}
 ```
 
 #### Configuration
