@@ -13,6 +13,8 @@
     "test:app": "ng test ngx-tealium-showcase --no-watch --no-progress --browsers=ChromeHeadlessCI",
     "test:lib": "ng test ngx-tealium --no-watch --no-progress --browsers=ChromeHeadlessCI",
     "test:ci": "npm run test:lib && npm run test:app",
+    "format:check": "prettier --list-different \"**/*.{ts,js,html,css,scss,less,md}\"",
+    "format:write": "prettier --write \"**/*.{ts,js,html,css,scss,less,md}\"",
     "prepare": "husky install",
     "postbuild:lib": "copyfiles README.md dist/ngx-tealium",
     "semantic-release": "semantic-release",
@@ -56,8 +58,19 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
+    "lint-staged": "^13.0.3",
     "ng-packagr": "^14.2.0",
+    "prettier": "^2.7.1",
     "semantic-release": "^19.0.5",
     "typescript": "~4.7.2"
+  },
+  "lint-staged": {
+    "*.{ts,js,html}": "eslint --cache --fix",
+    "*.{ts,js,html,css,scss,md}": "prettier --write"
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
   }
 }
