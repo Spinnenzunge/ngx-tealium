@@ -9,7 +9,7 @@ This library supports the implementation of customer tracking with Tealium in An
 ## Installation
 
 ```shell
-npm install @spinnenzunge/ngx-tealium --save
+npm install ngx-tealium --save
 ```
 
 ## Usage
