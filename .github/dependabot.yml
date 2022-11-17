@@ -5,7 +5,7 @@ updates:
     schedule:
       interval: "weekly"
     commit-message:
-      prefix: "fix: "
-      prefix-development: "chore: "
+      prefix: "fix"
+      prefix-development: "chore"
       include: scope
     open-pull-requests-limit: 0
