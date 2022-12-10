@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/Spinnenzunge/ngx-tealium/compare/v1.0.2...v1.0.3) (2022-12-10)
+
+
+### Bug Fixes
+
+* **deps:** bump decode-uri-component from 0.2.0 to 0.2.2 ([9d8cac9](https://github.com/Spinnenzunge/ngx-tealium/commit/9d8cac9a31c82143acedda633c4e9fbce554c504))
+
 ## [1.0.2](https://github.com/Spinnenzunge/ngx-tealium/compare/v1.0.1...v1.0.2) (2022-11-17)
 
 
