@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/Spinnenzunge/ngx-tealium/compare/v1.0.3...v1.0.4) (2023-07-17)
+
+
+### Bug Fixes
+
+* **deps:** bump socket.io-parser from 4.2.1 to 4.2.3 ([#29](https://github.com/Spinnenzunge/ngx-tealium/issues/29)) ([043fdb3](https://github.com/Spinnenzunge/ngx-tealium/commit/043fdb36cb0fea98447025ee823f756383c63094))
+
 ## [1.0.3](https://github.com/Spinnenzunge/ngx-tealium/compare/v1.0.2...v1.0.3) (2022-12-10)
 
 
