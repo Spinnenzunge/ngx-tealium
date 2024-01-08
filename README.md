@@ -16,6 +16,8 @@ npm install ngx-tealium --save
 
 ### 1. Import the `TealiumTrackingModule`
 
+> For Angular standalone support add `provideTealiumTracking()` to your app providers.  
+
 After installation you can use the ngx-tealium library in your Angular project. You have to
 import `TealiumTrackingModule.forRoot()` in the root NgModule of your application.
 

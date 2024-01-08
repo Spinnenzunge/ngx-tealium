@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
-import { TealiumTrackingService } from '../../../ngx-tealium/src/lib/tealium-tracking.service';
+import { TealiumTrackingService } from 'ngx-tealium';
 
 describe('AppComponent', () => {
   let tealiumTrackingServiceSpy: jasmine.SpyObj<TealiumTrackingService>;
@@ -9,13 +9,13 @@ describe('AppComponent', () => {
     tealiumTrackingServiceSpy = jasmine.createSpyObj<TealiumTrackingService>(['trackPageView', 'trackCustomEvent']);
 
     await TestBed.configureTestingModule({
-      declarations: [AppComponent],
+      imports: [AppComponent],
       providers: [
         {
           provide: TealiumTrackingService,
-          useValue: tealiumTrackingServiceSpy,
-        },
-      ],
+          useValue: tealiumTrackingServiceSpy
+        }
+      ]
     }).compileComponents();
   });
 
