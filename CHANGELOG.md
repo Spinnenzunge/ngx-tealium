@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/Spinnenzunge/ngx-tealium/compare/v1.1.0...v1.2.0) (2024-01-08)
+
+
+### Features
+
+* update project to Angular 17 ([d548044](https://github.com/Spinnenzunge/ngx-tealium/commit/d548044c39b28d448094df72f2b848de59e18a1a))
+
 # [1.1.0](https://github.com/Spinnenzunge/ngx-tealium/compare/v1.0.4...v1.1.0) (2024-01-08)
 
 
