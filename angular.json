@@ -109,10 +109,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ngx-tealium-showcase:build:production"
+              "buildTarget": "ngx-tealium-showcase:build:production"
             },
             "development": {
-              "browserTarget": "ngx-tealium-showcase:build:development"
+              "buildTarget": "ngx-tealium-showcase:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -120,7 +120,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-tealium-showcase:build"
+            "buildTarget": "ngx-tealium-showcase:build"
           }
         },
         "test": {
