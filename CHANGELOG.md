@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/Spinnenzunge/ngx-tealium/compare/v1.0.4...v1.1.0) (2024-01-08)
+
+
+### Features
+
+* add provider function for standalone ([3e5e3be](https://github.com/Spinnenzunge/ngx-tealium/commit/3e5e3beb7aad3e34858f40babd135f8ac8f192c3))
+
 ## [1.0.4](https://github.com/Spinnenzunge/ngx-tealium/compare/v1.0.3...v1.0.4) (2023-07-17)
 
 
