@@ -86,12 +86,6 @@
                   "maximumError": "4kb"
                 }
               ],
-              "fileReplacements": [
-                {
-                  "replace": "projects/ngx-tealium-showcase/src/environments/environment.ts",
-                  "with": "projects/ngx-tealium-showcase/src/environments/environment.prod.ts"
-                }
-              ],
               "outputHashing": "all"
             },
             "development": {
