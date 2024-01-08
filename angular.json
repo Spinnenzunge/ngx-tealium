@@ -56,7 +56,7 @@
       "prefix": "app",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:browser-esbuild",
           "options": {
             "outputPath": "dist/ngx-tealium-showcase",
             "index": "projects/ngx-tealium-showcase/src/index.html",
