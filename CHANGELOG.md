@@ -1,3 +1,10 @@
+## [1.2.1](https://github.com/Spinnenzunge/ngx-tealium/compare/v1.2.0...v1.2.1) (2024-03-18)
+
+
+### Bug Fixes
+
+* **deps:** bump ip from 2.0.0 to 2.0.1 ([fe1bf73](https://github.com/Spinnenzunge/ngx-tealium/commit/fe1bf73855305da0f8b6918fac1c9b481e893567))
+
 # [1.2.0](https://github.com/Spinnenzunge/ngx-tealium/compare/v1.1.0...v1.2.0) (2024-01-08)
 
 
